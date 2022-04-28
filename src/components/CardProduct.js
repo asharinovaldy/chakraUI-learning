@@ -14,7 +14,7 @@ function CardProduct() {
     } 
 
     return (
-        <Box maxW='container.lg' borderWidth='1px' borderRadius='lg' overflow='hidden' my='3'>
+        <Box maxW='container.md' borderWidth='1px' borderRadius='lg' overflow='hidden' my='3'>
             <Image src={property.imageUrl} alt={property.imageAlt} />
 
             <Box p='5'>

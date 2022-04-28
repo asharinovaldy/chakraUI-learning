@@ -34,6 +34,7 @@ import CardProduct from './components';
 import CardCategory from './components/CardCategory';
 import CardMerchant from './components/CardMerchant';
 import Product from './components/Product';
+import BannerMerchant from './components/BannerMerchant';
 
 function App() {
   const [show, setShow] = React.useState(false)
@@ -46,7 +47,7 @@ function App() {
         </Box>
 
         <VStack>
-          <Container maxW='container.sm'>
+          <Container maxW='container.xl'>
             <CardProduct />
             <Flex gap='5'>
               <CardCategory title='Kuliner' />
@@ -54,17 +55,19 @@ function App() {
               <CardCategory title='Gadget' />
             </Flex>
 
-            <Flex justifyContent='center' gap={'3'}>
+            <Flex justifyContent='start' gap={'3'}>
               <CardMerchant merchant="Nasgor Tiarbah" time="10:00 - 22:00 WITA" totalMenu = "15" location="Gunung Telihan" />
               <CardMerchant merchant="Geprek Legenda" time="10:00 - 22:00 WITA" totalMenu = "25" location="Satimpo" />
             </Flex>
 
-            <Flex justifyContent='center' gap={'3'}>
+            <Flex justifyContent='start' gap={'3'}>
               <Product productImage='https://borneos.link/OBLd0qF	' productName='Spicy Noodle' productPrice='Rp. 20.000' />
               <Product productImage='https://borneos.link/RqK8ik3' productName='Choco Cake' productPrice='Rp. 40.000' />
             </Flex>
 
+
           </Container>
+          <BannerMerchant />
         </VStack>
 
 

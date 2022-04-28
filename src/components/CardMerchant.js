@@ -7,7 +7,7 @@ function CardMerchant(props){
 
     return(
         
-        <Box p={'3'} borderWidth='1px' width='280px'  rounded='lg' my='5' boxShadow='lg' >
+        <Box p={'3'} borderWidth='1px' width='280px'  rounded='lg' my='5' boxShadow='lg' bg='white' >
             <VStack justify='space-evenly' height='340px'>
                 <MoonIcon color='teal' width='32px' height='32px'  />
                 <Text fontSize='18px' fontWeight='medium' lineHeight='20px' color='black' marginTop='18px' > { merchant } </Text>
