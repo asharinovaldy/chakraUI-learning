@@ -25,29 +25,35 @@ import {
   Input,
   InputGroup,
   HStack,
-  Flex
+  Flex,
+  useColorMode
 } from '@chakra-ui/react';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 import { Logo } from './Logo';
-import { PhoneIcon, AddIcon, WarningIcon, EmailIcon } from '@chakra-ui/icons';
+import { PhoneIcon, AddIcon, WarningIcon, EmailIcon, MoonIcon, SunIcon } from '@chakra-ui/icons';
 import CardProduct from './components';
 import CardCategory from './components/CardCategory';
 import CardMerchant from './components/CardMerchant';
 import Product from './components/Product';
 import BannerMerchant from './components/BannerMerchant';
+import Features from './components/Features';
 
 function App() {
   const [show, setShow] = React.useState(false)
   const handleClick = () => setShow(!show);
+  const { colorMode, toggleColorMode } = useColorMode()
 
   return (
     <ChakraProvider theme={theme}>
-        <Box bg={'teal'} w='100%' p={4} color='white'>  
-          This is the Box of Chakra
-        </Box>
+        <Flex bg={'teal'} w='100%' p={4} color='white' justifyContent={'center'}>
+            This is Chakra Box
+        </Flex>
 
         <VStack>
           <Container maxW='container.xl'>
+            <Flex justifyContent={'space-evenly'} maxW='100%' height={'100px'} borderWidth='1px' p={'5'} borderRadius={'8'} boxShadow={'lg'} my={'5'} >
+              <Features  />
+            </Flex>
             <CardProduct />
             <Flex gap='5'>
               <CardCategory title='Kuliner' />
