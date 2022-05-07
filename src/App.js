@@ -37,6 +37,7 @@ import CardMerchant from './components/CardMerchant';
 import Product from './components/Product';
 import BannerMerchant from './components/BannerMerchant';
 import Features from './components/Features';
+import BannerPromotions from './components/BannerPromotions';
 
 function App() {
   const [show, setShow] = React.useState(false)
@@ -72,6 +73,7 @@ function App() {
             </Flex>
 
 
+          <BannerPromotions />
           </Container>
           <BannerMerchant />
         </VStack>
