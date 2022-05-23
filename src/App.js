@@ -46,6 +46,7 @@ import BannerMerchant from './components/BannerMerchant';
 import Features from './components/Features';
 import BannerPromotions from './components/BannerPromotions';
 import CardFavorite from './components/CardFavorite';
+import ServiceLandingMobile from './components/ServiceLandingMobile';
 
 function App() {
   const [show, setShow] = React.useState(false);
@@ -108,6 +109,7 @@ function App() {
           </Flex>
 
           <BannerPromotions />
+          <ServiceLandingMobile />
           <CardFavorite />
         </Container>
         <BannerMerchant />
